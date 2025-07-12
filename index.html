@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Hub - Order Delicious Food Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">Foodie Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#restaurants">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="hero-text">Welcome to Foodie Hub<br><span
+                    style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; display: block; margin-top: 20px;">Order
+                    your favorite meals instantly!</span></h1>
+        </div>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section id="restaurants" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Featured Restaurants</h2>
+            <div class="row">
+                <!-- Restaurant 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                            class="card-img-top" alt="Italian Bistro">
+                        <div class="card-body">
+                            <h5 class="card-title">Italian Bistro</h5>
+                            <p class="card-text">Authentic Italian cuisine with fresh ingredients imported directly from
+                                Italy.</p>
+                            <a href="#italian-menu" class="btn btn-outline-primary">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1398&q=80"
+                            class="card-img-top" alt="Burger Palace">
+                        <div class="card-body">
+                            <h5 class="card-title">Burger Palace</h5>
+                            <p class="card-text">Gourmet burgers with premium ingredients and creative flavor
+                                combinations.</p>
+                            <a href="#burger-menu" class="btn btn-outline-primary">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
+                            class="card-img-top" alt="Sushi Haven">
+                        <div class="card-body">
+                            <h5 class="card-title">Sushi Haven</h5>
+                            <p class="card-text">Fresh sushi and Japanese specialties prepared by master chefs.</p>
+                            <a href="#sushi-menu" class="btn btn-outline-primary">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                            class="card-img-top" alt="Mexican Fiesta">
+                        <div class="card-body">
+                            <h5 class="card-title">Mexican Fiesta</h5>
+                            <p class="card-text">Vibrant Mexican flavors with authentic recipes and fresh ingredients.
+                            </p>
+                            <a href="#mexican-menu" class="btn btn-outline-primary">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Sections -->
+    <!-- Italian Menu -->
+    <section id="italian-menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Italian Bistro Menu</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            class="card-img-top" alt="Spaghetti Carbonara">
+                        <div class="card-body">
+                            <h5 class="card-title">Spaghetti Carbonara</h5>
+                            <p class="card-text">Classic Roman pasta with eggs, cheese, pancetta, and black pepper.</p>
+                            <p class="fw-bold">$14.99</p>
+                            <span class="badge available">Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
+                            class="card-img-top" alt="Margherita Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Margherita Pizza</h5>
+                            <p class="card-text">Traditional pizza with tomato sauce, mozzarella, and fresh basil.</p>
+                            <p class="fw-bold">$12.99</p>
+                            <span class="badge available">Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                            class="card-img-top" alt="Tiramisu">
+                        <div class="card-body">
+                            <h5 class="card-title">Tiramisu</h5>
+                            <p class="card-text">Classic Italian dessert with layers of coffee-soaked ladyfingers and
+                                mascarpone cream.</p>
+                            <p class="fw-bold">$7.99</p>
+                            <span class="badge available">Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            class="card-img-top" alt="Lasagna">
+                        <div class="card-body">
+                            <h5 class="card-title">Lasagna</h5>
+                            <p class="card-text">Layers of pasta, meat sauce, béchamel, and cheese baked to perfection.
+                            </p>
+                            <p class="fw-bold">$15.99</p>
+                            <span class="badge unavailable">Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#restaurants" class="btn btn-primary">Back to Restaurants</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Burger Menu -->
+    <section id="burger-menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Burger Palace Menu</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1398&q=80"
+                            class="card-img-top" alt="Classic Cheeseburger">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Cheeseburger</h5>
+                            <p class="card-text">Juicy beef patty with American cheese, lettuce, tomato, and special
+                                sauce.</p>
+                            <p class="fw-bold">$9.99</p>
+                            <span class="badge available">Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            class="card-img-top" alt="Bacon BBQ Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Bacon BBQ Burger</h5>
+                            <p class="card-text">Beef patty with crispy bacon, cheddar cheese, onion rings, and BBQ
+                                sauce.</p>
+                            <p class="fw-bold">$12.99</p>
+                            <span class="badge available">Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1522&q=80"
+                            class="card-img-top" alt="Mushroom Swiss Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Mushroom Swiss Burger</h5>
+                            <p class="card-text">Beef patty with sautéed mushrooms, Swiss cheese, and garlic aioli.</p>
+
+                            <p class="fw-bold">$11.99</p>
+                            <span class="badge available">Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1551615593-ef5fe247e8f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80"
+                            class="card-img-top" alt="Veggie Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Veggie Burger</h5>
+                            <p class="card-text">Plant-based patty with avocado, lettuce, tomato, and vegan mayo.</p>
+                            <p class="fw-bold">$10.99</p>
+                            <span class="badge unavailable">Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#restaurants" class="btn btn-primary">Back to Restaurants</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sushi Menu -->
+    <section id="sushi-menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Sushi Haven Menu</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            class="card-img-top" alt="California Roll">
+                        <div class="card-body">
+                            <h5 class="card-title">California Roll</h5>
+                            <p class="card-text">Crab, avocado, and cucumber wrapped in seaweed and rice.</p>
+                            <p class="fw-bold">$8.99</p>
+                            <span class="badge available">Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1617196034183-421b4917c92d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            class="card-img-top" alt="Salmon Nigiri">
+                        <div class="card-body">
+                            <h5 class="card-title">Salmon Nigiri</h5>
+                            <p class="card-text">Fresh slices of salmon over pressed vinegared rice.</p>
+                            <p class="fw-bold">$10.99</p>
+                            <span class="badge available">Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+                            class="card-img-top" alt="Dragon Roll">
+                        <div class="card-body">
+                            <h5 class="card-title">Dragon Roll</h5>
+                            <p class="card-text">Eel, cucumber, and avocado topped with thin avocado slices.</p>
+                            <p class="fw-bold">$14.99</p>
+                            <span class="badge available">Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+
+
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1617196035154-9b7f6e201fa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            class="card-img-top" alt="Tempura Udon">
+                        <div class="card-body">
+                            <h5 class="card-title">Tempura Udon</h5>
+                            <p class="card-text">Hot noodle soup with shrimp and vegetable tempura.</p>
+                            <p class="fw-bold">$12.99</p>
+                            <span class="badge unavailable">Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#restaurants" class="btn btn-primary">Back to Restaurants</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mexican Menu -->
+    <section id="mexican-menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Mexican Fiesta Menu</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1513451732213-5775a1c40335?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                            class="card-img-top" alt="Chicken Tacos">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Tacos</h5>
+                            <p class="card-text">Three soft corn tortillas with grilled chicken, onions, cilantro, and
+                                salsa.</p>
+                            <p class="fw-bold">$10.99</p>
+                            <span class="badge available">Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            class="card-img-top" alt="Beef Burrito">
+                        <div class="card-body">
+                            <h5 class="card-title">Beef Burrito</h5>
+                            <p class="card-text">Large flour tortilla stuffed with seasoned beef, rice, beans, and
+                                cheese.</p>
+                            <p class="fw-bold">$12.99</p>
+                            <span class="badge available">Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1601050690117-64b6d3ffe9f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                            class="card-img-top" alt="Chiles Rellenos">
+                        <div class="card-body">
+                            <h5 class="card-title">Chiles Rellenos</h5>
+                            <p class="card-text">Poblano peppers stuffed with cheese, battered and fried, served with
+                                rice.</p>
+                            <p class="fw-bold">$13.99</p>
+                            <span class="badge available">Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card menu-item h-100">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80"
+                            class="card-img-top" alt="Guacamole">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Guacamole</h5>
+                            <p class="card-text">Freshly made avocado dip with tomatoes, onions, cilantro, and lime.</p>
+                            <p class="fw-bold">$7.99</p>
+                            <span class="badge unavailable">Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#restaurants" class="btn btn-primary">Back to Restaurants</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="order" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Place Your Order</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Customer Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="restaurant" class="form-label">Restaurant</label>
+                            <select class="form-select" id="restaurant" required>
+                                <option value="" selected disabled>Select a restaurant</option>
+                                <option value="Italian Bistro">Italian Bistro</option>
+                                <option value="Burger Palace">Burger Palace</option>
+                                <option value="Sushi Haven">Sushi Haven</option>
+                                <option value="Mexican Fiesta">Mexican Fiesta</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Menu Items</label>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="item1">
+                                <label class="form-check-label" for="item1">
+                                    Spaghetti Carbonara - $14.99
+                                </label>
+                                <input type="number" class="form-control form-control-sm w-25 d-inline-block ms-2"
+                                    min="1" value="1">
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="item2">
+                                <label class="form-check-label" for="item2">
+                                    Classic Cheeseburger - $9.99
+                                </label>
+                                <input type="number" class="form-control form-control-sm w-25 d-inline-block ms-2"
+                                    min="1" value="1">
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="item3">
+                                <label class="form-check-label" for="item3">
+                                    California Roll - $8.99
+                                </label>
+                                <input type="number" class="form-control form-control-sm w-25 d-inline-block ms-2"
+                                    min="1" value="1">
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="item4">
+                                <label class="form-check-label" for="item4">
+                                    Chicken Tacos - $10.99
+                                </label>
+                                <input type="number" class="form-control form-control-sm w-25 d-inline-block ms-2"
+                                    min="1" value="1">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Place Order</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                        alt="About Foodie Hub" class="img-fluid about-img">
+                </div>
+                <div class="col-lg-6 about-text">
+                    <h2 class="mb-4">About Foodie Hub</h2>
+                    <p>Foodie Hub is your one-stop destination for ordering delicious meals from the best restaurants in
+                        town. We connect food lovers with a variety of culinary experiences, from authentic Italian
+                        pasta to gourmet burgers and fresh sushi.</p>
+                    <p>Our mission is to make food ordering simple, fast, and enjoyable. With just a few clicks, you can
+                        have your favorite meals delivered to your doorstep or ready for pickup.</p>
+                    <p>We carefully select our restaurant partners to ensure quality and variety, so you can always find
+                        something to satisfy your cravings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section / Footer -->
+    <footer id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3 class="text-white mb-4">Contact Us</h3>
+                    <p><i class="bi bi-envelope me-2"></i> info@foodiehub.com</p>
+                    <p><i class="bi bi-phone me-2"></i> (123) 456-7890</p>
+                    <p><i class="bi bi-geo-alt me-2"></i> 123 Food Street, Culinary City</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3 class="text-white mb-4">Opening Hours</h3>
+                    <p>Monday - Friday: 10am - 10pm</p>
+                    <p>Saturday - Sunday: 11am - 11pm</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Foodie Hub. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

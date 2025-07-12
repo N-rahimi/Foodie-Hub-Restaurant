@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {  
+    --bg-black-900: #f2f2fc;  
+    --bg-black-100: #fdf9ff;  
+    --bg-black-50: #e8dfec;  
+    --text-black-900: #302e4d;  
+    --text-black-700: #504e70;  
+    --skin-color: #ec1839;  
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-black-900);
+    background-color: var(--bg-black-100);
+}
+
+/* Navbar styles */
+.navbar-brand {
+    font-family: 'Clicker Script', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fd7e14 !important; /* Orange color for logo */
+}
+
+.nav-link {
+    color: var(--text-black-900);
+    font-weight: 500;
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #fd7e14 !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #fd7e14;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    font-family: 'Clicker Script', cursive;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Restaurant cards */
+.restaurant-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Menu items */
+.menu-item {
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.menu-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.available {
+    background-color: #28a745 !important;
+}
+
+.unavailable {
+    background-color: #dc3545 !important;
+}
+
+/* About section */
+.about-img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-black-900);
+    color: white;
+    padding: 30px 0;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #fd7e14;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 2.5rem;
+    }
+    
+    .about-text {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text {
+        font-size: 2rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
